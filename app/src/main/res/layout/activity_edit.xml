@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Edit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name of the terrain"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/editP1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Probability of deterioration"
+                android:inputType="numberDecimal" />
+            <EditText
+                android:id="@+id/editP2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Probability of maintaining the current state"
+                android:inputType="numberDecimal" />
+            <EditText
+                android:id="@+id/editP3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Probability of improving the condition"
+                android:inputType="numberDecimal" />
+            <EditText
+                android:id="@+id/editC1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Price for construction of photovoltaic stations"
+                android:inputType="number" />
+            <Button
+                android:id="@+id/editButtonTR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit average annual temperatures and average annual radiation" />
+            <EditText
+                android:id="@+id/editC2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Price for construction of HPP"
+                android:inputType="number" />
+            <Button
+                android:id="@+id/editButtonWater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit average annual high tides" />
+            <EditText
+                android:id="@+id/editC3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Price for construction of wind turbines"
+                android:inputType="number" />
+            <Button
+                android:id="@+id/editButtonWint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit average annual wind speeds" />
+            <Button
+                android:id="@+id/editButtonEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit" />
+            <Button
+                android:id="@+id/editButtonDeletе"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

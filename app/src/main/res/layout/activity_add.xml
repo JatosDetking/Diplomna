@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Add">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/addProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressBackgroundTint="@color/red"
+            android:progressTint="@color/teal_700"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/addName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name of the terrain"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/addP1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Probability of deterioration"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/addP2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Probability of maintaining the current state"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/addP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Probability of improving the condition"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/addC1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Price for construction of photovoltaic stations"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/addC2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Price for construction of HPP"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/addC3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Price for construction of wind turbines"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/addButtonNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="next" />
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
